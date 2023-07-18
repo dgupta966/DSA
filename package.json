@@ -1,0 +1,11 @@
+{
+  "name": "parcel",
+  "version": "1.0.0",
+  "description": "parcel",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Deepak Gupta",
+  "license": "ISC"
+}
