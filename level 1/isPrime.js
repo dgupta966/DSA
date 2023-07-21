@@ -7,4 +7,14 @@ function isPrime(num) {
   return num > 1;
 }
 
-console.log(isPrime(2));
+// console.log(isPrime(2));
+
+function printPrimeToN(n) {
+  for (let i = 0; i <= n; i++) {
+    if (isPrime(i)) {
+      console.log(i);
+    }
+  }
+}
+
+printPrimeToN(20);
