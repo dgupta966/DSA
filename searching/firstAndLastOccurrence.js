@@ -51,6 +51,17 @@ function lastOccurrence(arr, k) {
 console.log(lastOccurrence(arr, 5));
 
 /*
+    frequency of an element if we have sorted array - 
+
+    lastOccurrence - firstOccurrence + 1
+    
+    it will be in just O(N) time
+
+*/
+
+console.log(lastOccurrence(arr, 5) - firstOccurrence(arr, 5) + 1);
+
+/*
 time complexity - O(N)
 space - O(1)
 
