@@ -55,14 +55,14 @@ console.log(lastOccurrence(arr, 5));
 
     lastOccurrence - firstOccurrence + 1
     
-    it will be in just O(N) time
+    it will be in just O(log2N) - log base 2 N time
 
 */
 
 console.log(lastOccurrence(arr, 5) - firstOccurrence(arr, 5) + 1);
 
 /*
-time complexity - O(N)
+time complexity - O(log2N) - log base 2 N
 space - O(1)
 
 */
