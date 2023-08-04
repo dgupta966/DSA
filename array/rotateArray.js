@@ -18,3 +18,27 @@ function rotateArray(arr, k) {
 }
 
 console.log(rotateArray(arr, 3));
+
+// rotate without creating new array
+
+function reverseArray(arr, i, j) {
+  while (i <= j) {
+    let temp = arr[i];
+    arr[i++] = arr[j];
+    arr[j--] = temp;
+  }
+  return arr;
+}
+
+function rotateArrayK(arr, k) {
+  const n = arr.length;
+  const m = (k % n) - 1;
+
+  reverseArray(arr, 0, n - 1);
+  reverseArray(arr, 0, m);
+  reverseArray(arr, m + 1, n - 1);
+
+  return arr;
+}
+
+console.log(rotateArrayK(arr, 12));
