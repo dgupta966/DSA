@@ -19,3 +19,6 @@ function countSubarraySum(arr, k) {
 }
 
 console.log(countSubarraySum(arr, 0));
+
+// some test cases fails, need improvement
+//https://leetcode.com/problems/subarray-sum-equals-k/description/
