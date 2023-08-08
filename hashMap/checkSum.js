@@ -31,6 +31,22 @@ function checkPair(arr, k) {
 
 console.log(checkPair(arr, 7));
 
+// approach 2
+function checkPair2(arr, k) {
+  const m = new Map();
+
+  for (let i = 0; i < arr.length; i++) {
+    if (m.has(k - arr[i])) {
+      return "True";
+    }
+    m.set(arr[i], 0);
+  }
+  console.log(m);
+  return "False";
+}
+
+console.log(checkPair2(arr, 9));
+
 /* Time complexity - logn
    Space complexity - logn
 
