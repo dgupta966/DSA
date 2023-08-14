@@ -47,6 +47,7 @@
 
 for (let m = 1; m <= 7; m += 2) {
   pattern(m);
+  // need more optimization here
   if (m === 7) {
     for (let i = 1; i <= m + 1; i++) {
       for (let j = 1; j <= 10; j++) {
